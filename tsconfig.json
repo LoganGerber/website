@@ -1,0 +1,41 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.web.json",
+	"include": [
+		"env.d.ts",
+		"src/**/*",
+		"src/**/*.vue"
+	],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		},
+		"alwaysStrict": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowJs": false,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"lib": [
+			"ES5",
+			"DOM"
+		],
+		"target": "ES5",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"declaration": true,
+		"sourceMap": true
+	},
+	"references": [
+		{
+			"path": "./tsconfig.vite-config.json"
+		}
+	]
+}
