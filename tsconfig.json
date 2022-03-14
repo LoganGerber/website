@@ -19,7 +19,8 @@
 		"allowUnusedLabels": false,
 		"lib": [
 			"ES5",
-			"DOM"
+			"DOM",
+			"ES2015"
 		],
 		"target": "ES5",
 		"moduleResolution": "node",
