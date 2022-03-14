@@ -1,0 +1,17 @@
+@import "@/assets/loganBase.css";
+
+div.dualGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	grid-template-rows: var(--navbar-height) calc(100vh - var(--navbar-height) - var(--footer-height)) var(--footer-height);
+
+	grid-template-areas:
+		"nav nav"
+		"content-left content-right"
+		"footer footer";
+
+	column-gap: 20px;
+
+	place-items: stretch;
+}

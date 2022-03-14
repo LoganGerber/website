@@ -1,0 +1,34 @@
+@import "@/assets/reset.css";
+
+:root {
+	--lg-c-dark: #101d29;
+	--lg-c-text-dark-1: #ffffff
+	--lg-c-text-dark-2: #ffffff8e;
+
+
+	--lg-navbar-height-full: 65px;
+	--lg-footer-height-full: 30px;
+
+
+	--navbar-item-spacing: 25px;
+	--navbar-icon-spacing: 15px;
+}
+
+:root {
+	--color-background: var(--lg-c-dark);
+	--color-heading: var(--lg-c-text-dark-1);
+	--color-text: var(--lg-c-text-dark-2);
+
+	--navbar-height: var(--lg-navbar-height-full);
+	--footer-height: var(--lg-footer-height-full);
+}
+
+/* @media (prefers-color-scheme: light) {
+
+} */
+
+body {
+	background: var(--color-background);
+	color: var(--color-text);
+	/* transition: color 0.5s, background-color 0.5s; */
+}
