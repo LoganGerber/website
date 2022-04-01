@@ -32,7 +32,6 @@ import { RouterLink } from 'vue-router';
 #homeLink {
 	color: white;
 	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30pt;
 	font-weight: 700;
 	padding-left: 10px;

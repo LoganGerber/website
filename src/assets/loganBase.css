@@ -31,4 +31,5 @@ body {
 	background: var(--color-background);
 	color: var(--color-text);
 	/* transition: color 0.5s, background-color 0.5s; */
+	font-family: Arial, Helvetica, sans-serif;
 }
