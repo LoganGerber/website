@@ -1,11 +1,33 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+import HeaderIcon from '@/components/HeaderIcon.vue';
 </script>
 
 <template>
 	<nav id="pageHeader">
 		<RouterLink to="/" id="homeLink">Logan Gerber</RouterLink>
-		<!-- <RouterLink to="/resume" id="resumeLink"></RouterLink> -->
+		<HeaderIcon
+			id="newResumeLink"
+			href="public/Resume.pdf"
+			icon="file"
+			title="Resume"
+			:captionSize="12"
+			:iconSize="28"
+		>Resume</HeaderIcon>
+		<!-- <RouterLink to="/resume" id="resumeLink">
+			<font-awesome-icon icon="file" inverse title="Resume" />
+		</RouterLink>-->
+		<!-- <a href="resume" id="resumeLink">
+			<font-awesome-icon icon="file" inverse title="Resume" />
+		</a>-->
+		<HeaderIcon
+			id="newGithubLink"
+			href="https://github.com/LoganGerber"
+			icon="['fab', 'github-square']"
+			title="Github"
+			:captionSize="12"
+			:iconSize="32"
+		>Github</HeaderIcon>
 		<a href="https://github.com/LoganGerber" id="githubLink">
 			<font-awesome-icon :icon="['fab', 'github-square']" inverse title="Github" />
 		</a>
@@ -17,6 +39,10 @@ import { RouterLink } from 'vue-router';
 </template>
 
 <style scoped>
+#newResumeLink {
+	margin-left: auto;
+}
+
 #pageHeader {
 	display: flex;
 	flex-direction: row;
@@ -37,13 +63,20 @@ import { RouterLink } from 'vue-router';
 	padding-left: 10px;
 }
 
-/* #resumeLink {
-} */
+#resumeLink {
+	margin-left: 10px;
+	font-size: 28pt;
+}
 
 #githubLink {
+	font-size: 32pt;
+	margin-left: 10px;
 }
 
 #emailLink {
+	font-size: 32pt;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #blogLink {
