@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 defineProps({
 	href: {
 		type: String,
@@ -22,12 +24,23 @@ defineProps({
 		default: 12
 	}
 });
+
+let isHovered = ref(false);
 </script>
 
 <template>
-	<a :href="href" :target="target" class="headerIcon">
+	<a
+		:href="href"
+		:target="target"
+		class="headerIcon"
+		@mouseover="isHovered = true"
+		@mouseout="isHovered = false"
+	>
 		<font-awesome-icon :icon="icon" inverse :title="title" :style="{ 'fontSize': iconSize + 'pt' }" />
-		<span class="iconCaption" :style="{ 'fontSize': captionSize + 'pt' }">
+		<span
+			class="iconCaption"
+			:style="{ 'fontSize': captionSize + 'pt', 'display': isHovered ? 'contents' : 'none' }"
+		>
 			<slot></slot>
 		</span>
 	</a>
