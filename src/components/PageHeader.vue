@@ -13,7 +13,7 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 			title="Resume"
 			:captionSize="12"
 			:iconSize="28"
-		>Resume</HeaderIcon>
+		>Resumé</HeaderIcon>
 		<!-- <RouterLink to="/resume" id="resumeLink">
 			<font-awesome-icon icon="file" inverse title="Resume" />
 		</RouterLink>-->
@@ -49,7 +49,7 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 
 	justify-content: flex-start;
 	flex-wrap: nowrap;
-	align-items: center;
+	align-items: flex-end;
 
 	border: 1px solid white;
 	height: 64px;
