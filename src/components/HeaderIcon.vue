@@ -29,18 +29,9 @@ let isHovered = ref(false);
 </script>
 
 <template>
-	<a
-		:href="href"
-		:target="target"
-		class="headerIcon"
-		@mouseover="isHovered = true"
-		@mouseout="isHovered = false"
-	>
+	<a :href="href" :target="target" class="headerIcon" @mouseover="isHovered = true" @mouseout="isHovered = false">
 		<font-awesome-icon :icon="icon" inverse :title="title" :style="{ 'fontSize': iconSize + 'pt' }" />
-		<span
-			class="iconCaption"
-			:style="{ 'fontSize': captionSize + 'pt', 'opacity': isHovered ? '1' : '0', 'display': isHovered ?  }"
-		>
+		<span class="iconCaption" :style="{ 'fontSize': captionSize + 'pt', 'opacity': isHovered ? '1' : '0' }">
 			<slot></slot>
 		</span>
 	</a>
