@@ -6,51 +6,17 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 <template>
 	<nav id="pageHeader">
 		<RouterLink to="/" id="homeLink">Logan Gerber</RouterLink>
-		<HeaderIcon
-			id="newResumeLink"
-			href="public/Resume.pdf"
-			:icon="'file'"
-			title="Resume"
-			:captionSize="12"
-			:iconSize="28"
-		>Resumé</HeaderIcon>
-		<!-- <RouterLink to="/resume" id="resumeLink">
-			<font-awesome-icon icon="file" inverse title="Resume" />
-		</RouterLink>-->
-		<!-- <a href="resume" id="resumeLink">
-			<font-awesome-icon icon="file" inverse title="Resume" />
-		</a>-->
-		<HeaderIcon
-			id="newGithubLink"
-			href="https://github.com/LoganGerber"
-			:icon="['fab', 'github-square']"
-			title="Github"
-			:captionSize="12"
-			:iconSize="28"
-		>Github</HeaderIcon>
-		<!-- <a href="https://github.com/LoganGerber" id="githubLink">
-			<font-awesome-icon :icon="['fab', 'github-square']" inverse title="Github" />
-		</a> -->
-		<!-- <a href="mailto:logangerber@protonmail.com" id="emailLink">
-			<font-awesome-icon icon="envelope" inverse title="Email" />
-		</a> -->
-		<HeaderIcon
-			id="newEmailLink"
-			href="mailto:logangerber@protonmail.com"
-			:icon="'envelope'"
-			title="Email"
-			:captionSize="12"
-			:iconSize="28"
-		>Email</HeaderIcon>
+		<HeaderIcon id="resumeLink" href="public/Resume.pdf" :icon="'file'" title="Resume" :captionSize="12"
+			:iconSize="28">Resumé</HeaderIcon>
+		<HeaderIcon id="githubLink" href="https://github.com/LoganGerber" :icon="['fab', 'github-square']"
+			title="Github" :captionSize="12" :iconSize="28">Github</HeaderIcon>
+		<HeaderIcon id="emailLink" href="mailto:logangerber@protonmail.com" :icon="'envelope'" title="Email"
+			:captionSize="12" :iconSize="28">Email</HeaderIcon>
 		<!-- <RouterLink to="/blog" id="blogLink"></RouterLink> -->
 	</nav>
 </template>
 
 <style scoped>
-#newResumeLink {
-	margin-left: auto;
-}
-
 #pageHeader {
 	display: flex;
 	flex-direction: row;
@@ -76,33 +42,19 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 }
 
 #resumeLink {
-	margin-left: 10px;
-	font-size: 28pt;
+	margin-left: auto;
 }
 
 #githubLink {
-	font-size: 32pt;
-	margin-left: 10px;
-}
-
-#newGithubLink {
 	margin-left: 10px;
 }
 
 #emailLink {
-	font-size: 32pt;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-#newEmailLink {
-	margin-left: 10px;
-	margin-right: 10px;
-}
+#blogLink {}
 
-#blogLink {
-}
-
-#hamburgerMenu {
-}
+#hamburgerMenu {}
 </style>
