@@ -85,8 +85,17 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 	margin-left: 10px;
 }
 
+#newGithubLink {
+	margin-left: 10px;
+}
+
 #emailLink {
 	font-size: 32pt;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#newEmailLink {
 	margin-left: 10px;
 	margin-right: 10px;
 }
