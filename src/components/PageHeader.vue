@@ -9,7 +9,7 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 		<HeaderIcon
 			id="newResumeLink"
 			href="public/Resume.pdf"
-			icon="file"
+			:icon="'file'"
 			title="Resume"
 			:captionSize="12"
 			:iconSize="28"
@@ -23,10 +23,10 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 		<HeaderIcon
 			id="newGithubLink"
 			href="https://github.com/LoganGerber"
-			icon="['fab', 'github-square']"
+			:icon="['fab', 'github-square']"
 			title="Github"
 			:captionSize="12"
-			:iconSize="32"
+			:iconSize="28"
 		>Github</HeaderIcon>
 		<a href="https://github.com/LoganGerber" id="githubLink">
 			<font-awesome-icon :icon="['fab', 'github-square']" inverse title="Github" />
