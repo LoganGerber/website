@@ -51,7 +51,11 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 	flex-wrap: nowrap;
 	align-items: flex-end;
 
-	border: 1px solid white;
+	/* padding-bottom: 10px; */
+
+	background: var(--color-header-background);
+
+	/* border: 1px solid white; */
 	height: 64px;
 }
 
