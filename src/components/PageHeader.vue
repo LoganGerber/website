@@ -28,12 +28,20 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 			:captionSize="12"
 			:iconSize="28"
 		>Github</HeaderIcon>
-		<a href="https://github.com/LoganGerber" id="githubLink">
+		<!-- <a href="https://github.com/LoganGerber" id="githubLink">
 			<font-awesome-icon :icon="['fab', 'github-square']" inverse title="Github" />
-		</a>
-		<a href="mailto:logangerber@protonmail.com" id="emailLink">
+		</a> -->
+		<!-- <a href="mailto:logangerber@protonmail.com" id="emailLink">
 			<font-awesome-icon icon="envelope" inverse title="Email" />
-		</a>
+		</a> -->
+		<HeaderIcon
+			id="newEmailLink"
+			href="mailto:logangerber@protonmail.com"
+			:icon="'envelope'"
+			title="Email"
+			:captionSize="12"
+			:iconSize="28"
+		>Email</HeaderIcon>
 		<!-- <RouterLink to="/blog" id="blogLink"></RouterLink> -->
 	</nav>
 </template>
