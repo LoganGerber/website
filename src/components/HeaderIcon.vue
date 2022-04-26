@@ -39,7 +39,7 @@ let isHovered = ref(false);
 		<font-awesome-icon :icon="icon" inverse :title="title" :style="{ 'fontSize': iconSize + 'pt' }" />
 		<span
 			class="iconCaption"
-			:style="{ 'fontSize': captionSize + 'pt', 'display': isHovered ? 'contents' : 'none' }"
+			:style="{ 'fontSize': captionSize + 'pt', 'opacity': isHovered ? '1' : '0', 'display': isHovered ?  }"
 		>
 			<slot></slot>
 		</span>
@@ -58,5 +58,8 @@ let isHovered = ref(false);
 .iconCaption {
 	color: white;
 	font-weight: bold;
+
+	position: relative;
+	height: 0;
 }
 </style>
