@@ -2,6 +2,7 @@
 
 :root {
 	--lg-c-dark: #101d29;
+	--lg-c-lessdark: #152738;
 	--lg-c-text-dark-1: #ffffff
 	--lg-c-text-dark-2: #ffffff8e;
 
@@ -16,6 +17,7 @@
 
 :root {
 	--color-background: var(--lg-c-dark);
+	--color-header-background: var(--lg-c-lessdark);
 	--color-heading: var(--lg-c-text-dark-1);
 	--color-text: var(--lg-c-text-dark-2);
 
