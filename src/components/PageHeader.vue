@@ -6,12 +6,13 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 <template>
 	<nav id="pageHeader">
 		<RouterLink to="/" id="homeLink">Logan Gerber</RouterLink>
-		<HeaderIcon id="resumeLink" href="public/Resume.pdf" :icon="'file'" title="Resume" :captionSize="12"
-			:iconSize="28">Resumé</HeaderIcon>
+		<div id="spacer"></div>
+		<HeaderIcon id="resumeLink" href="public/Resume.pdf" :icon="'file'" title="Resume">Resumé
+		</HeaderIcon>
 		<HeaderIcon id="githubLink" href="https://github.com/LoganGerber" :icon="['fab', 'github-square']"
-			title="Github" :captionSize="12" :iconSize="28">Github</HeaderIcon>
-		<HeaderIcon id="emailLink" href="mailto:logangerber@protonmail.com" :icon="'envelope'" title="Email"
-			:captionSize="12" :iconSize="28">Email</HeaderIcon>
+			title="Github">Github</HeaderIcon>
+		<HeaderIcon id="emailLink" href="mailto:logangerber@protonmail.com" :icon="'envelope'" title="Email">Email
+		</HeaderIcon>
 		<!-- <RouterLink to="/blog" id="blogLink"></RouterLink> -->
 	</nav>
 </template>
