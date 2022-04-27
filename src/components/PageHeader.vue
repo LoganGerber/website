@@ -25,13 +25,15 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 	justify-content: flex-start;
 	flex-wrap: nowrap;
 	align-items: flex-end;
-
-	/* padding-bottom: 10px; */
+	gap: 20px;
 
 	background: var(--color-header-background);
 
-	/* border: 1px solid white; */
-	height: 64px;
+	height: 50px;
+
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #homeLink {
@@ -39,23 +41,9 @@ import HeaderIcon from '@/components/HeaderIcon.vue';
 	text-decoration: none;
 	font-size: 30pt;
 	font-weight: 700;
-	padding-left: 10px;
 }
 
-#resumeLink {
-	margin-left: auto;
+#spacer {
+	flex-grow: 1;
 }
-
-#githubLink {
-	margin-left: 10px;
-}
-
-#emailLink {
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-#blogLink {}
-
-#hamburgerMenu {}
 </style>
