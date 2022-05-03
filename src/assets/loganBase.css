@@ -3,7 +3,7 @@
 :root {
 	--lg-c-dark: #101d29;
 	--lg-c-lessdark: #152738;
-	--lg-c-text-dark-1: #ffffff
+	--lg-c-text-dark-1: #ffffff;
 	--lg-c-text-dark-2: #ffffff8e;
 
 
@@ -25,9 +25,9 @@
 	--footer-height: var(--lg-footer-height-full);
 }
 
-/* @media (prefers-color-scheme: light) {
-
-} */
+@media (prefers-color-scheme: light) {
+	:root {}
+}
 
 body {
 	background: var(--color-background);
