@@ -3,14 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { ref, computed, onMounted, onUpdated } from 'vue';
 
 defineProps({
-	href: {
-		type: String,
-		required: true
-	},
-	target: {
-		type: String,
-		default: '_blank'
-	},
 	icon: {
 		type: [String, Array],
 		required: true
@@ -28,7 +20,7 @@ defineProps({
 
 let isHovered = ref(false);
 const caption = ref<HTMLSpanElement | null>(null);
-const parent = ref<HTMLAnchorElement | null>(null);
+const parent = ref<HTMLDivElement | null>(null);
 
 const captionOpacity = computed(() => {
 	return isHovered.value ? '1' : '0';
@@ -54,15 +46,14 @@ function updateCaptionOffset() {
 </script>
 
 <template>
-	<a :href="href" :target="target" class="headerIcon" @mouseover="isHovered = true" @mouseout="isHovered = false"
-		ref="parent">
+	<div class="headerIcon" @mouseover="isHovered = true" @mouseout="isHovered = false" ref="parent">
 		<font-awesome-icon :icon="icon" inverse :title="title" :style="{ 'fontSize': iconSize + 'pt' }" />
 		<span class="iconCaption" :style="{
 			'fontSize': captionSize + 'pt', 'opacity': captionOpacity
 		}" ref="caption">
 			<slot></slot>
 		</span>
-	</a>
+	</div>
 </template>
 
 <style scoped>
