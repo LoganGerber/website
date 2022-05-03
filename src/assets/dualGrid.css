@@ -1,9 +1,9 @@
-@import "@/assets/loganBase.css";
+@import "@/assets/base.css";
 
 div.dualGrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	
+
 	grid-template-rows: var(--navbar-height) calc(100vh - var(--navbar-height) - var(--footer-height)) var(--footer-height);
 
 	grid-template-areas:

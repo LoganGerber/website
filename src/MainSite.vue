@@ -9,6 +9,6 @@ import PageHeader from '@/components/PageHeader.vue';
 </template>
 
 <style>
-@import "@/assets/loganBase.css";
+@import "@/assets/base.css";
 @import "@/assets/dualGrid.css";
 </style>
