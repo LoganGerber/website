@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
-import HeaderAnchor from '@/components/HeaderAnchor.vue';
+import HeaderIcon from '@/components/HeaderIcon.vue';
 </script>
 
 <template>
 	<nav id="pageHeader">
 		<RouterLink to="/" id="homeLink">Logan Gerber</RouterLink>
 		<div id="spacer"></div>
-		<HeaderAnchor id="resumeLink" href="public/Resume.pdf" :icon="'file'" title="Resume">Resumé
-		</HeaderAnchor>
-		<HeaderAnchor id="githubLink" href="https://github.com/LoganGerber" :icon="['fab', 'github-square']"
-			title="Github">Github</HeaderAnchor>
-		<HeaderAnchor id="emailLink" href="mailto:logangerber@protonmail.com" :icon="'envelope'" title="Email">Email
-		</HeaderAnchor>
+		<HeaderIcon id="resumeLink" href="public/Resume.pdf" :icon="'file'" title="Resume">Resumé
+		</HeaderIcon>
+		<HeaderIcon id="githubLink" href="https://github.com/LoganGerber" :icon="['fab', 'github-square']"
+			title="Github">Github</HeaderIcon>
+		<HeaderIcon id="emailLink" href="mailto:logangerber@protonmail.com" :icon="'envelope'" title="Email">Email
+		</HeaderIcon>
 		<!-- <RouterLink to="/blog" id="blogLink"></RouterLink> -->
 	</nav>
 </template>
